@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>PetSafe Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <img src="logo.png" alt="">
+                <ul>
+                    <li><a href="">Inicio</a> </li>
+                    <li><a href="">Meus Pet's</a> </li>
+                    <li><a href="">Encontrar Clínicas Próximas</a> </li>
+                    <li><a href="">Loja PetSafe</a> </li>
+                    <li><a href="">Quiz</a> </li>
+                </ul>
+            </nav>
+            <button onclick="logout()">Sair</button>
+        </div>
+    </header>
+    <main>
+        <a href="#" onclick="toggleCart()"><i class="fas fa-shopping-cart" id="carrinho"></i></a>
+        <div id="cartContainer" class="cart-container">
+            <h2>Carrinho de Compras</h2>
+            <button class="close-button" onclick="toggleCart()" >&times;</button>
+            <div id="cartItems" class="cart-items"></div>
+            <button class="checkout-button" id="finalizar-compra" onclick="redirectToPayment()">Finalizar Compra</button>
+        </div>
+        </div>
+        <h1>Bem-vindo aos produtos PetSafe!</h1>
+        <div id="ecommerceContainer">
+            <!-- Aqui serão exibidos os produtos -->
+        </div>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &copy; 2023</p>
+    </footer>
+    <script src="ecommerce.js"></script>
+</body>
+
+</html> 

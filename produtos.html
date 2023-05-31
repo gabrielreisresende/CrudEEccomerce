@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtos.css">
+    <script src="https://kit.fontawesome.com/c7727c0104.js" crossorigin="anonymous"></script>
+    <script src="produtos.js" defer></script>
+    <title>Gerenciar Produtos</title>    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <nav>
+    
+            <ul class="dropdown-menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Gerenciamento &#9660;</a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">Usuarios</a></li>
+                        <li><a href="pets.html">Pets</a></li>
+                        <li><a href="#">Clínicas</a></li>
+                        <li><a href="perg&resp.html">Perguntas e Respostas</a></li>
+                        <li><a href="#">Dicas</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cartão de Vacina</a></li>
+                <li><a href="#">Clínicas Próximas</a></li>
+                <li><a href="#">Lembrete de Vacinação</a></li>
+            </ul>
+        </nav>
+        <nav class="navigation-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Gerenciamento</a></li>
+              <li><a href="#">Cartão de Vacina</a></li>
+              <li><a href="#">Clínicas Próximas</a></li>
+              <li><a href="#">Lembrete de Vacinação</a></li>
+            </ul>
+          </nav>
+        <div class="icon">
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            <p> Administrador</p>
+        </div>  
+        <div class="icon">
+            <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>
+            <a href="">Sair</a>
+        </div>
+    </header>
+    <h1>Cadastrar Produtos</h1>
+
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarProduto">Cadastrar Produto</button>
+        <table id="tableProduto" class="records">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Descrição</th>
+                    <th>Imagem</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Tópico</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="number" id="id" data-index="new" class="modal-field" placeholder="Id(*)"required>
+                    <input type="text" id="produto" class="modal-field" placeholder="Produto(*)" required>
+                    <input type="text" id="preco" class="modal-field" placeholder="Preço(*)" required>
+                    <input type="text" id="descricao" class="modal-field" placeholder="Descrição(*)" required>
+                    <input type="text" id="imagem" class="modal-field" placeholder="Link imagem(*)" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <button class="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+</html>
